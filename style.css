@@ -1,0 +1,183 @@
+/**
+ * !Changing default styles of browser
+ **/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/**
+ * !Style rules for the form sections
+ **/
+
+.failure-icon,
+.success-icon {
+  right: 0;
+  opacity: 0;
+}
+
+.failure-icon,
+.error {
+  color: red;
+}
+
+.success-icon {
+  color: green;
+}
+
+.or {
+  margin-top: 15px;
+}
+
+form {
+  width: 45%;
+  /* max-width: 400px; */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+}
+
+form div {
+  position: relative;
+}
+
+#submit {
+  margin-top: 15px;
+}
+
+form div i {
+  position: absolute;
+  padding: 10px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+form div label {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.btn-1,
+.btn-2 {
+  padding: 10px 5px;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid #c4c4c4;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-1 {
+  /* margin-bottom: 20px; */
+  /* margin-top: 15px; */
+}
+
+.btn-2 {
+  background-color: #4f70b5;
+  height: auto;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+/**
+ * !Style rules for the content section
+ **/
+
+.content {
+  background-color: #f2796e;
+  width: 55%;
+}
+
+form div input {
+  width: 100%;
+  border-radius: 8px;
+  height: 40px;
+  outline: none;
+  border: 2px solid #c4c4c4;
+  padding: 0 30px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+  font-size: 15px;
+}
+
+label {
+  display: block;
+  /* border: 2px solid red; */
+  margin-bottom: 12px;
+}
+
+.error {
+  font-size: 14.5px;
+  margin-top: 5px;
+}
+
+form div i {
+  position: absolute;
+}
+
+/**
+ * !Style rules for the Button class
+ **/
+
+button {
+  width: 100%;
+  margin-top: 15px;
+  font-size: 20px;
+  color: white;
+  border-radius: 8px;
+  border: 2px solid #f2796e;
+  height: 45px;
+  background-color: #f2796e;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all ease 0.1s;
+}
+
+input:focus {
+  border: 2px solid #f2796e;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/**
+*! Style rules for the social section
+**/
+
+.or {
+  text-align: center;
+}
+
+span {
+  color: #f2796e;
+  cursor: pointer;
+}
+
+/**
+ * !Media Queries Here
+ **/
