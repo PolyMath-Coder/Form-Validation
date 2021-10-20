@@ -71,6 +71,7 @@ form div label {
 
 .btn {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   gap: 15px;
 }
@@ -120,8 +121,8 @@ form div label {
 
 .image {
   background-image: url('images/illustration.svg');
-  /* border: 2px solid black;
-  border-radius: 8px; */
+  /* border: 2px solid black; */
+  border-radius: 8px;
   background-size: contain;
   background-position: center;
   height: 70%;
@@ -205,3 +206,26 @@ span {
 /**
  * !Media Queries Here
  **/
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+  #form,
+  .content {
+    width: 100%;
+  }
+  .btn {
+    flex-direction: column;
+  }
+
+  .image {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 425px) {
+  #form {
+    padding: 35px;
+  }
+}
