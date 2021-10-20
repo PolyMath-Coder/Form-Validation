@@ -36,6 +36,9 @@ body {
 }
 
 form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 45%;
   /* max-width: 400px; */
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
@@ -106,8 +109,23 @@ form div label {
  **/
 
 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: #f2796e;
   width: 55%;
+  min-height: 100vh;
+  padding: 15px 20px;
+}
+
+.image {
+  background-image: url('images/illustration.svg');
+  /* border: 2px solid black;
+  border-radius: 8px; */
+  background-size: contain;
+  background-position: center;
+  height: 70%;
+  background-repeat: no-repeat;
 }
 
 form div input {
@@ -155,6 +173,12 @@ button {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all ease 0.1s;
+}
+
+.text {
+  color: white;
+  text-align: center;
+  font-weight: lighter;
 }
 
 input:focus {
